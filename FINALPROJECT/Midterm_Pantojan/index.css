@@ -1,0 +1,120 @@
+/* head is the navigator bar*/
+
+.head a{
+	text-decoration: none;
+	color:white; 
+	padding: 20px;
+	font-size:30px;
+	font-family:sans-serif;
+	text-transform:uppercase;
+}
+
+.logo{
+	width:80px;
+	cursor: pointer; 
+	border-radius:50px;
+	float:left; 
+	display:inline;
+}
+
+body{
+	background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/bg.jpeg);
+	background-size:cover;  
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border:none;
+}
+
+button{
+	background: transparent;
+	border-radius:20px;
+}
+
+/* Above is header*/ 
+/* Below is home*/
+
+
+.cont{ 
+	border-style: double;
+	font-family:sans-serif;
+	text-transform:uppercase; 
+	color:white; 
+	margin:60px; 
+	border-radius:10px;
+}
+
+.hbut{
+	text-decoration: none;
+	color:white; 
+	font-family:sans-serif;
+	text-transform:uppercase; 
+	border: 2px solid #009688;
+	position: relative; 
+	left:1000px;
+}
+
+/* Above is home*/ 
+/* Below is blog*/ 
+
+.blog{
+	border-style: double;
+	font-family:sans-serif;
+	text-transform:uppercase; 
+	color:white; 
+	margin:60px; 
+	border-radius:10px;
+	text-align:center;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+} 
+
+/* Above is blog*/ 
+/* Below is footer*/
+ 
+.footer{
+	border-style: double;
+	font-family:sans-serif;
+	text-transform:uppercase; 
+	color:white; 
+	margin:60px; 
+	border-radius:10px;
+	text-align:center;
+}
+
+.fet a{
+	text-decoration: none;
+	color:white; 
+	padding: 20px;
+	font-size:30px;
+	font-family:sans-serif;
+	text-transform:uppercase; 
+	margin: 10px;
+}
+
+.pic{
+	width:80px;
+	cursor: pointer; 
+	border-radius:50px;
+
+} 
+
+@media all and (max-width: 800px){
+	.con nav, .head div, .blog div, .footer div{
+		justify-content: space-around;
+	}
+}
+
+@media all and (max-width: 300px){
+	.con nav, .head div, .blog div, .footer div{
+	flex-flow: column wrap;
+	padding: 0;
+	}
+}

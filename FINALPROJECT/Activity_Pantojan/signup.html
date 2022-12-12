@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+	Signup
+  </title> 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body align="center"> 
+	<h1> Please Fill up and Create your account </h1>
+	<form id="ito">
+	  <table  align="center" cellpadding="8" >
+	    <tr>
+		  <td>Name</td>
+		  <td><input type="text" placeholder="Please enter your Name" id="name"> </td>
+		</tr> 
+		
+		<tr>
+		  <td>Email</td>
+		  <td><input type="text" placeholder="Please enter your Email" id="email"></td>
+		</tr>
+		
+		<tr>
+		  <td>Password</td>
+		  <td><input type="password" placeholder="Please enter your password" id="pd"></td>
+		</tr> 
+		
+		<tr>
+		  <td>Confirm Password</td>
+		  <td><input type="password" placeholder="Please re-enter your password" id="cpd"></td>
+		</tr> 
+		
+		<tr>
+		  <td><input type="button" value="Signup" onclick="create_account()"></td>
+		  <td><input type="reset" value="Clear"></td>
+		</tr>
+	  </table>
+	</form>
+	
+		<script> 
+		
+		function create_account(){
+			var name = document.getElementById("name").value;
+			var mail = document.getElementById("email").value;
+			var pass = document.getElementById("pd").value;
+			var cpass = document.getElementById("cpd").value;
+
+			var letters = /^[A-Za-z]+$/;
+			var email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+			if(name == '' || pass == '' || mail == '' || cpass == ''){
+				alert("Input Values!");
+			}
+			else if(name.length <2){
+				alert("Please Input Longer Username!");
+			}
+			else if(pass.length < 5){    
+				alert("Please Input Longer Password!");
+			}  
+			else if(!name.match(letters)){
+				alert("Please Input Letters Only!");
+			}
+			else if(!mail.match(email)){
+				alert("Please Input Valid Email!");
+			}
+			else if(pass != cpass){
+				alert("Password Not Match!");
+			}
+			else{
+				alert("Account Created! Redirecting to Homepage...");
+				window.location.replace("Activity.html"); 
+				return false; 
+			} 
+				}
+		</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=width-device initial-scale=1.0">
+    <title>Portfolio</title> 
+        <link rel="stylesheet" href="more.css">
+        <link rel = "stylesheet" type="text/css" href="index.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+   
+
+</head> 
+
+<body> 
+
+    <section class="section" id="section">  
+      <div class="content">
+        <div class="main-cont" id="navbar">
+            <header>
+                 <div class="logo">
+                    <i class="fa-solid fa-signature"></i>
+                 </div>
+
+                <div class="link" >
+                    <nav>
+                        <a class="this" href="#section">Home</a>
+                        <a class="this" href="#service">Services</a> 
+                        <a class="this" href="#portfolio">Portfolio</a>
+                        <a class="this" href="#contact">Contact</a> 
+                        <a class="this" href="index.html">Back</a>
+                    </nav>
+                </div>   
+            </header> 
+        </div>  
+
+        <div class="home_container">
+        <div class="home_cont">
+            <div class="picture"><img class="home_img" src="pictures/me.jpg" alt="John Paul Pantojan" ></div>
+            <div class="home-text">
+                <b>John Paul E. Pantojan</b> <br><br>
+                <p>I am 20 years old. I live in Catalunan Grande Davao City. I am still an aspirant
+                    when it comes to programming but I ensure you that I can deliver the workload
+                    with resilience and determination. I will make sure that I do my best to 
+                    finish my job before deadline. I can work with anybody and make sure that I can 
+                    adapt to any situation given to me.
+                     I like to read books and watch anything that I think
+                    will amuse me. </p>
+            </div>        
+        </div>  
+        </div>
+        </section>
+
+        <section class="section" id="service"> 
+        <div class="service_container">
+            <center><b class="text">Services</b></center>
+
+            <div class="service_content">
+                <div class="service-1"><b class="service_text">Software Development</b>
+                <br><img class="img" src="pictures/sofdev.jpg" alt="Software_Development">
+                </div> 
+
+                <div class="service-2"><b class="service_text">Website Development</b>
+                <br><img src="pictures/webdev.jpg" alt="Web_Development" class="img">
+                </div>
+            </div>
+        </div>
+        </section> 
+
+        <section class="section" id="portfolio">
+            <div class="portfolio_container">
+            <center><b class="text">Portfolio</b></center>
+
+            <div class="portfolio_content"> 
+
+                <div class="service-1">
+
+                 <b class="port_text">Image Gallery</b> <br>
+                 <img src="pictures/p1.png" alt="Image Gallery" class="img"> <br> 
+                 <p class="port_text">Click<a class="aport" href="Activity_Pantojan/Activity.html">Here</a></p>
+
+                </div>  
+
+                <div class="service-2">
+
+                    <b class="port_text">Blog</b>
+                    <br><img src="pictures/p2.png" alt="Web_Development" class="img"> <br> 
+                    <p class="port_text">Click <a class="aport" href="Midterm_Pantojan/index.html">Here</a>
+                    </p>
+
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+
+        <section class="sec2" id="contact">
+            <div class="contact_container">
+            <center><b class="text">Contact</b></center>
+
+            <div class="contact_content">
+                <div class="picture"><img class="img" src="pictures/loc.png" alt="Davao City" ></div>
+                <div class="contact_text">
+                <b>Contact Information</b> <br><br>
+                <b>Facebook</b>
+                <br>
+                <p>John Paul Pantojan</p> 
+                <br>
+                <b>Email</b>
+                <br>
+                <p>pantojanjohn@gmail.com</p> 
+                <br>
+                <b>Location</b>
+                <br>
+                <p>Davao City</p>
+            </div>  
+            </div>
+
+        </div>
+        </section>
+    </div>
+
+    <div class="foot">
+    <footer>
+        <div class="flogo">
+            <i class="fa-solid fa-signature"></i>
+        </div>     
+    </footer>
+    </div>
+
+    <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop; 
+
+            function myFunction(){
+                if (window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                } else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+    </script>
+
+
+</body>
+
+</html>
